@@ -1,0 +1,342 @@
+/* Importar la fuente Barlow de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado */
+.contenedor-header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.txtRojo {
+    color: #ff1133;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 17, 51, 0.5);
+}
+
+.redes a {
+    margin-left: 10px;
+    color: #fff;
+}
+
+/* Estilos del menú responsivo */
+.nav-responsive {
+    display: none;
+    cursor: pointer;
+}
+.info-personal {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre la imagen de la sección y tus datos */
+}
+
+.imagen-personal {
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+
+/* Sección de inicio */
+.inicio {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagenes/fondo.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.inicio .info h2 {
+    font-size: 3rem;
+}
+
+.inicio .btn-mas {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff1133;
+}
+
+/* Opciones */
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.opcion {
+    background: rgba(255, 17, 51, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Sección Nosotros */
+.nosotros {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.nosotros .fila {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.nosotros .col {
+    flex: 1;
+    padding: 20px;
+}
+
+.nosotros img {
+    max-width: 100%;
+    height:auto;
+    border-radius: 10px;
+}
+
+.nosotros .contenedor-titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nosotros .numero {
+    font-size: 3rem;
+    color: #ff1133;
+    margin-right: 10px;
+}
+
+.nosotros .frase {
+    color: #ff1133;
+}
+
+/* Sección Servicios */
+.servicios {
+    padding: 60px 20px;
+    background: url('/imagenes/fondo-servicios.jpg') no-repeat center center/cover; 
+
+}
+
+.servicios .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.servicios .info-servicios {
+    margin-top: 40px;
+}
+
+.servicios table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.servicios td {
+    text-align: center;
+    padding: 20px;
+}
+
+.servicios td h3 {
+    margin: 10px 0;
+}
+
+.servicios td i {
+    font-size: 2rem;
+    color: #ff1133;
+}
+
+.servicios .col img {
+    max-width: 100%;
+    height:auto;
+    content: url('imagenes/servicios.png');
+}
+
+/* Sección Comodidades */
+.comodidades {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.comodidades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comodidades li {
+    margin-bottom: 10px;
+}
+
+/* Sección Galería */
+.galeria {
+    padding: 60px 20px;
+    background: url('imagenes/fondo-galeria.jpg') no-repeat center center/cover;
+}
+
+.galeria .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.galeria .contenedor-titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.galeria .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.galeria .col img {
+    max-width: 100%;
+    height:auto;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+
+/* Sección Equipo */
+.equipo {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.equipo .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.equipo .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipo .col {
+    text-align: center;
+}
+
+.equipo img {
+    max-width: 100%;
+    height:auto;
+    border-radius: 10px;
+}
+
+
+/* Sección Contacto */
+.contacto {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+}
+
+.contacto .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contacto .mensaje {
+    margin-top: 20px;
+}
+
+.contacto button {
+    background-color: #ff1133;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #151623;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .redes a {
+    margin: 0 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav-responsive {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .opciones {
+        flex-direction: column;
+    }
+
+    .nosotros .fila {
+        flex-direction: column;
+    }
+
+    .servicios .fila {
+        flex-direction: column;
+    }
+
+    .galeria .fila {
+        flex-direction: column;
+    }
+
+    .equipo .fila {
+        flex-direction: column;
+    }
+
+    .contacto .fila {
+        flex-direction: column;
+    }
+}
+
